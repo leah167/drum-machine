@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header">
+        <h1>Metronome</h1>
+    </div>
     <div class="tip">
         (Click anywhere to hear sound...)
     </div>
@@ -21,20 +24,24 @@
         <div class="arm"></div>
     </div>
     <div id="count-display"></div>
+    <div id="count-input-display">
+        <label for="count-input">Change Count:</label>
+        <input id="count-input" value="4">
+    </div>
     <div id="metronome">
         <input type="checkbox" id="metronome-checkbox" value="Metronome" checked>
         <label for="metronome">Metronome</label>
     </div>
     <div id="kick-drum"> 
         <input type="checkbox" id="kick-checkbox" value="kick-drum">
-        <label for="kick-drum">Kick drum</label>
+        <label for="kick-drum">Kick Drum</label>
 
         <label for="kick-drum-timing">Timing</label>
         <input id="kick-drum-timing">
     </div>
     <div id="snare-drum">
         <input type="checkbox" id="snare-checkbox" value="snare-drum">
-        <label for="snare-drum">Snare drum</label>
+        <label for="snare-drum">Snare Drum</label>
 
         <label for="snare-drum-timing">Timing</label>
         <input id="snare-drum-timing">

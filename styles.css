@@ -9,7 +9,14 @@ body {
     justify-content: center;
     margin: none;
     flex-direction: column;
-    background-color: #81b29a;
+    background-image: linear-gradient(purple, blue);
+}
+
+.header {
+    font-style: normal;
+    font-weight: bold;
+    margin: 24px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .tip {
@@ -27,29 +34,29 @@ body {
 }
 
 .background-left {
-    border-bottom: 400px solid #e07a5f;
+    border-bottom: 400px solid hsl(295, 68%, 24%);
     border-left: 100px solid transparent;
 }
 
 .background-center {
     flex: 1;
-    background-color: #f2cc8f;
+    background-color: hsl(184, 70%, 52%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .background-right {
-    border-bottom: 400px solid #e07a5f;
+    border-bottom: 400px solid hsl(300, 68%, 63%);
     border-right: 100px solid transparent;
 }
 
 .core {
     flex: 1;
     width: 30%;
-    background-color: #f4f1de;
+    background-color: rgb(211, 155, 236);
     margin: 24px 0;
-    border: 6px dashed #e07a5f;
+    border: 6px dashed #bb5fe0;
 }
 
 @keyframes tick {
@@ -69,4 +76,23 @@ body {
     left: 165px;
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
+}
+
+#count-input{
+    width: 50px;
+}
+
+#kick-drum-timing{
+    width: 50px;
+    text-align: center;
+}
+
+#snare-drum-timing{
+    width: 50px;
+    text-align: center;
+}
+
+#hi-hat-timing{
+    width: 50px;
+    text-align: center;
 }

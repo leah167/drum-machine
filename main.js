@@ -8,6 +8,9 @@ const hiHat = new Audio('sounds/hi-hat.mp3');
 //metronome count display
 let metCountDisplay = document.querySelector("#count-display");
 
+// change count input
+let changeCount = document.querySelector("#count-input");
+
 //metronome count
 let metCount = 0;
 
@@ -21,11 +24,12 @@ let metPlay = document.querySelector("#metronome-checkbox");
 let kickPlay = document.querySelector("#kick-checkbox");
 let snarePlay = document.querySelector("#snare-checkbox");
 let hiPlay = document.querySelector("#hi-checkbox");
+
 // This function is called every 600ms
 function update() {
     
 
-    if (metCount === 4) {
+    if (metCount === Number(changeCount.value) ) {
        metCount = 0;
       
     }
@@ -45,7 +49,7 @@ function metChecker() {
             tick.play();
         }
 
-        if (metCount === 4) {
+        if (metCount % 4 === 0) {
             tock.load();
             tock.play();
         }
